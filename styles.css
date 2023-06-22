@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+main {
+  margin-top: 4.375rem;
+  margin-inline: 0.75rem;
+  max-width: 57.8125rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer span {
+  font-size: 0.875rem;
+  color: #a9a9a9;
+}
+
+.content__description {
+  margin-bottom: 4rem;
+}
+
+.content__description h1 {
+  font-family: "PT Serif", serif;
+  font-size: 2.25rem;
+  letter-spacing: -1.5px;
+  margin-bottom: 2.375rem;
+}
+
+.sub-content h3 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+
+.sub-content p {
+  font-size: 0.875rem;
+  padding-right: 0.2rem;
+}
+
+@media (min-width: 62rem) {
+  main {
+    margin-inline: auto;
+  }
+
+  .content__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sub-content {
+    width: 27.5rem;
+  }
+
+  .sub-content p {
+    padding-right: 0;
+    font-size: 1.125rem;
+  }
+}
+
+.crew__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 9.6875rem);
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  width: 21.875rem;
+  margin-inline: auto;
+}
+
+.crew__card:nth-child(even) {
+  margin-top: 2.9rem;
+}
+
+.crew__card {
+  width: 9.6875rem;
+}
+
+.crew__card h2 {
+  font-size: 0.875rem;
+}
+
+.crew__info {
+  margin-bottom: 0.625rem;
+}
+
+.crew__info img {
+  width: 8.75rem;
+  height: auto;
+}
+
+.crew__info {
+  display: flex;
+  align-items: start;
+  column-gap: 0.2rem;
+}
+
+.crew__info span {
+  writing-mode: vertical-lr;
+  font-family: "PT Serif", serif;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 62rem) {
+  .crew__cards {
+    grid-template-columns: repeat(3, 16.5625rem);
+    justify-content: start;
+    gap: 0 4rem;
+    margin: 0 0 5rem;
+    width: 100%;
+  }
+
+  .crew__card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .crew__card:nth-child(2),
+  .crew__card:nth-child(5) {
+    margin-top: 6rem;
+  }
+
+  .crew__card {
+    width: 16.5625rem;
+  }
+
+  .crew__info {
+    margin-bottom: 1rem;
+    column-gap: 0.625rem;
+  }
+
+  .crew__info img {
+    width: 14.875rem;
+  }
+
+  .crew__info span {
+    font-size: 0.75rem;
+  }
+}
